@@ -1,0 +1,62 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="btWelcome">Start</string>
+    <string name="welcome">Welcome To Term Tracker</string>
+    <string name="btTerm">Add Term</string>
+    <string name="bt_add_class">Add Class</string>
+    <string name="bt_delete_term">Delete Term </string>
+    <string name="bt_update_term">Update Term </string>
+    <string name="bt_delete_class">Delete Class </string>
+    <string name="bt_update_class">Update Class </string>
+    <string name="bt_add_term">New term</string>
+    <string name="inputName">Enter Term name</string>
+    <string name="terName">Term Tittle:</string>
+    <string name="startDate"> Start Date:</string>
+    <string name="inputStartDate">Enter Start Date</string>
+    <string name="endDate"> End Date:</string>
+    <string name="inputEndDate">Enter End Date</string>
+    <string name="addTerm">Add Term\n</string>
+    <string name="student_graduation_hate">student graduation hate</string>
+
+    <string name="class_title">Class Title:</string>
+    <string name="inputTitleClass">Enter Class Title</string>
+    <string name="start_date_class">Start Date:</string>
+    <string name="end_date_class">End Date:</string>
+    <string name="statues">Statues:</string>
+    <string name="instructor_name">Instructor name:</string>
+    <string name="phone_number">Phone Number:</string>
+    <string name="email">Email:</string>
+
+
+    <string name="complete_class">Completed</string>
+    <string name="dropped_class">Dropped</string>
+    <string name="progress_class">In Progress</string>
+    <string name="plane_to_take">Plane to take</string>
+    <string name="inputInstructorName">Enter Instructor name:</string>
+    <string name="inputPhoneNumber">Enter Phone Number:</string>
+    <string name="inputEmail">Enter Email:</string>
+
+    <string name="InputAssessmentName">Enter Assessment Title</string>
+    <string name="bt_assessment">Add Assessment</string>
+    <string name="assessment_title">Assessment <br>Title</br>:</string>
+    <string name="start_date_assessment">Enter End Date</string>
+    <string name="end_date_assessment">Enter Start Date</string>
+    <string name="type">Type of assessment</string>
+    <string name="Objective">Objective assessment</string>
+    <string name="Performance">Performance assessment</string>
+    <string name="todo">TODO</string>
+
+    <string name="updateAssessment">Update Assessment</string>
+    <string name="bt_delete_assessment">Delete Assessment</string>
+
+    <string name="AlertFoSelection">Something want wrong when selecting.</string>
+    <string name="Statues">Statues:</string>
+    <string name="typeAssessmentText">Type:</string>
+    <string name ="channel_name">ScheduleChannel</string>
+    <string name ="channel_description">Notification for description</string>
+    <string name="sendEmail">Email\n</string>
+    <string name="sendSms">SMS</string>
+    <string name="btDetails">details</string>
+
+
+</resources>

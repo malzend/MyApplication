@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="0.4"
+    tools:context=".activities.addClass">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="20dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            tools:ignore="UselessParent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/classTitle"
+                    android:layout_width="72dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.4"
+                    android:text="@string/assessment_title"
+                    android:textSize="20sp"
+                    tools:ignore="TextSizeCheck" />
+
+                <EditText
+                    android:id="@+id/etAssessmentTitleUpdate2"
+                    android:layout_width="257dp"
+                    android:layout_height="80dp"
+                    android:layout_weight="0.6"
+                    android:autofillHints=""
+                    android:gravity="center"
+                    android:hint="@string/InputAssessmentName"
+                    android:editable="false"
+                    ></EditText>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_weight="0.4"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/startDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="-12dp"
+                    android:layout_weight="0.4"
+                    android:text="@string/start_date_class"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/etStartDateAssessment2"
+                    android:layout_width="280dp"
+                    android:layout_height="80dp"
+                    android:layout_weight="0.6"
+                    android:gravity="center"
+                    android:hint="@string/inputStartDate"
+                    android:editable="false"
+                    ></EditText>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/endDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="-12dp"
+                    android:layout_weight="0.4"
+                    android:text="@string/end_date_class"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/etEndDateAssessment2"
+                    android:layout_width="279dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="15dp"
+                    android:layout_weight="0.6"
+                    android:gravity="center"
+                    android:hint="@string/inputEndDate"
+                    android:editable="false"
+                    tools:ignore="DuplicateSpeakableTextCheck"></EditText>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_weight="0.4"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txAssessmentTypeView"
+                    android:layout_width="104dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="-12dp"
+                    android:layout_weight="0.4"
+                    android:text="@string/typeAssessmentText"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/etAssessmentTypeView"
+                    android:layout_width="279dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.6"
+                    android:gravity="center"
+                    android:hint="@string/inputEndDate"
+                    android:editable="false"
+                    tools:ignore="TouchTargetSizeCheck"></EditText>
+
+
+            </LinearLayout>
+
+
+            <Button
+                android:id="@+id/btUpdateAssessment"
+                android:layout_width="182dp"
+                android:layout_height="52dp"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/custom_button"
+                android:gravity="center"
+                android:text="@string/updateAssessment"
+                android:textSize="20sp"
+                tools:ignore="TextSizeCheck" />
+
+            <Button
+                android:id="@+id/btDeleteAssessment"
+                android:layout_width="182dp"
+                android:layout_height="52dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="30dp"
+                android:background="@drawable/custom_button"
+                android:text="@string/bt_delete_assessment"
+                android:textSize="20sp"
+                tools:ignore="TextSizeCheck" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.updateClass"
+    android:orientation="vertical">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="20dp"
+        tools:ignore="UselessParent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="40dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/classTitle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/class_title"
+                            android:textColor="#0C0C0C"
+                            android:textSize="20sp" />
+
+                        <EditText
+                            android:id="@+id/etCalssTitleUpdate"
+                            android:layout_width="280dp"
+                            android:layout_height="80dp"
+                            android:autofillHints=""
+                            android:gravity="center"
+                            android:hint="@string/inputTitleClass"
+                            android:inputType="text"
+                            android:textColorHint="#8D6E63"></EditText>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/startDate"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/start_date_class"
+                            android:textColor="#0B0A0A"
+                            android:textSize="20sp" />
+
+                        <EditText
+                            android:id="@+id/etStartDateAssessment2"
+                            android:layout_width="280dp"
+                            android:layout_height="80dp"
+                            android:autofillHints=""
+                            android:gravity="center"
+                            android:hint="@string/inputStartDate"
+                            android:inputType="date"
+                            android:textColorHint="#8D6E63"
+                            tools:ignore="DuplicateSpeakableTextCheck"></EditText>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/endDate"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/end_date_class"
+                            android:textColor="#0B0A0A"
+                            android:textColorHint="#090808"
+                            android:textSize="20sp" />
+
+                        <EditText
+                            android:id="@+id/etEndDateAssessment2"
+                            android:layout_width="280dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="5dp"
+                            android:autofillHints=""
+                            android:gravity="center"
+                            android:hint="@string/inputEndDate"
+                            android:inputType="date"
+                            android:textColorHint="#8D6E63"></EditText>
+                    </LinearLayout>
+
+                    <CheckedTextView
+                        android:id="@+id/TypeAssessment"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginBottom="15dp"
+                        android:text="@string/statues"
+                        android:textSize="20sp" />
+
+                    <LinearLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <RadioGroup
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:id="@+id/rbObjectiveAssessment2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/plane_to_take"
+                                android:textSize="12sp"
+                                tools:ignore="TouchTargetSizeCheck" />
+
+                            <RadioButton
+                                android:id="@+id/rbPerformanceAssessment2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="@string/progress_class"
+                                android:textSize="12sp"
+                                tools:ignore="VisualLintButtonSize,TouchTargetSizeCheck" />
+
+                            <RadioButton
+                                android:id="@+id/rbCompletedUpdate"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="@string/complete_class"
+                                tools:ignore="VisualLintButtonSize,TouchTargetSizeCheck" />
+
+                            <RadioButton
+                                android:id="@+id/rbDropedUpdate"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="@string/dropped_class"
+                                android:textSize="12sp"
+                                tools:ignore="VisualLintButtonSize,TouchTargetSizeCheck" />
+                        </RadioGroup>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="30dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/inName"
+                            android:layout_width="122dp"
+                            android:layout_height="wrap_content"
+                            android:text="@string/instructor_name"
+                            android:textColor="#171616"
+                            android:textSize="20sp" />
+
+                        <EditText
+                            android:id="@+id/etInstructorNameUpdate"
+                            android:layout_width="280dp"
+                            android:layout_height="match_parent"
+                            android:autofillHints=""
+                            android:gravity="center"
+                            android:hint="@string/inputInstructorName"
+                            android:inputType="text"
+                            android:textColorHint="#8D6E63"></EditText>
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/phoneNumber"
+                            android:layout_width="119dp"
+                            android:layout_height="wrap_content"
+                            android:text="@string/phone_number"
+                            android:textColor="#0B0909"
+                            android:textSize="20sp" />
+
+                        <EditText
+                            android:id="@+id/etPhoneUpdate"
+                            android:layout_width="280dp"
+                            android:layout_height="match_parent"
+                            android:autofillHints=""
+                            android:gravity="center"
+                            android:hint="@string/inputPhoneNumber"
+                            android:inputType="phone"
+                            android:textColorHint="#8D6E63"></EditText>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/email"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/email"
+                            android:textColor="#151414"
+                            android:textSize="20sp" />
+
+                        <EditText
+                            android:id="@+id/etEmailUpdate"
+                            android:layout_width="280dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="65dp"
+                            android:autofillHints=""
+                            android:gravity="center"
+                            android:hint="@string/inputEmail"
+                            android:inputType="textEmailAddress"
+                            android:textColorHint="#8D6E63"
+                            tools:ignore="TextFields"></EditText>
+                    </LinearLayout>
+
+                    <EditText
+                        android:id="@+id/etNotesUpdate"
+                        android:layout_width="match_parent"
+                        android:layout_height="109dp"
+                        android:hint="Enter optional class notes" />
+
+                </LinearLayout>
+
+
+                <Button
+                    android:id="@+id/btUpdateAssessment2"
+                    android:layout_width="182dp"
+                    android:layout_height="52dp"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginBottom="40dp"
+                    android:background="@drawable/custom_button"
+                    android:text="@string/bt_update_class"
+                    android:textSize="20sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

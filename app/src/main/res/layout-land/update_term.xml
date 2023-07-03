@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center|top"
+    android:orientation="vertical"
+    android:paddingTop="0dp"
+    tools:context=".activities.addTerm">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="40dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginStart="0dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingStart="0dp"
+            tools:ignore="RtlSymmetry">
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="64dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.2"
+                android:gravity="center"
+                android:text="@string/terName"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/etTermName"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginBottom="15dp"
+                android:layout_weight="0.6"
+                android:autofillHints="Name"
+                android:gravity="center"
+                android:hint="@string/inputName"
+                android:inputType="text"
+                android:textColorHint="#8D6E63"
+                tools:ignore="VisualLintTextFieldSize" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="74dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.2"
+                android:gravity="center"
+                android:text="@string/startDate"
+                android:textColor="#0B0A0A"
+                android:textSize="20sp"
+                tools:ignore="TextSizeCheck" />
+
+            <EditText
+                android:id="@+id/pkStartDate"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginBottom="15dp"
+                android:layout_weight="0.8"
+                android:autofillHints="Start Date"
+                android:gravity="center"
+                android:hint="@string/inputStartDate"
+                android:inputType="date"
+                android:textColorHint="#8D6E63"
+                tools:ignore="VisualLintTextFieldSize" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.2"
+                android:gravity="center"
+                android:text="@string/endDate"
+                android:textColor="#070707"
+                android:textSize="20sp"
+                tools:ignore="RtlSymmetry" />
+
+            <EditText
+                android:id="@+id/pkEndDate"
+                android:layout_width="183dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginBottom="15dp"
+                android:layout_weight="0.8"
+                android:autofillHints="End Date"
+                android:gravity="center"
+                android:hint="@string/inputEndDate"
+                android:inputType="date"
+                android:textColorHint="#8D6E63"
+                tools:ignore="VisualLintTextFieldSize" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btUpdateTerm"
+            android:layout_width="182dp"
+            android:layout_height="52dp"
+            android:layout_gravity="center"
+            android:layout_marginVertical="80dp"
+            android:layout_marginBottom="30dp"
+            android:background="@drawable/custom_button"
+            android:gravity="center"
+            android:text="@string/bt_update_term"
+            android:textSize="20sp"
+            tools:ignore="VisualLintButtonSize" />
+    </LinearLayout>
+
+</LinearLayout>

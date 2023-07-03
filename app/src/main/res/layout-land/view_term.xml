@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginStart="20dp"
+    android:layout_marginEnd="20dp"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".activities.viewTerm">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp">
+
+                <TextView
+                    android:id="@+id/txTermTtilte2"
+                    android:layout_width="44dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.2"
+                    android:gravity="center"
+                    android:text="@string/terName"
+                    android:textColor="#0B0A0A"
+                    android:textSize="20sp"
+                    tools:layout_editor_absoluteX="42dp"
+                    tools:layout_editor_absoluteY="38dp" />
+
+                <EditText
+                    android:id="@+id/etTittle2"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.8"
+                    android:editable="false"
+                    android:gravity="center"
+                    android:hint="@string/inputName"
+                    android:importantForAutofill="no"
+                    android:textColorHint="#8D6E63"
+                    tools:ignore="TouchTargetSizeCheck,VisualLintTextFieldSize" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp">
+
+                <TextView
+                    android:id="@+id/txStartDate2"
+                    android:layout_width="45dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.2"
+                    android:gravity="center"
+                    android:text="@string/startDate"
+                    android:textColor="#040303"
+                    android:textSize="20sp"
+                    tools:layout_editor_absoluteX="42dp"
+                    tools:layout_editor_absoluteY="38dp" />
+
+                <EditText
+                    android:id="@+id/etStartDate2"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.8"
+                    android:editable="false"
+                    android:gravity="center"
+                    android:hint="@string/inputStartDate"
+                    android:importantForAutofill="no"
+                    android:paddingStart="10dp"
+                    android:textColorHint="#8D6E63"
+                    tools:ignore="RtlSymmetry,TouchTargetSizeCheck,VisualLintTextFieldSize" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp">
+
+                <TextView
+                    android:id="@+id/endDate2"
+                    android:layout_width="116dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.2"
+                    android:gravity="center"
+                    android:text="@string/endDate"
+                    android:textColor="#070707"
+                    android:textSize="20sp"
+                    tools:layout_editor_absoluteX="42dp"
+                    tools:layout_editor_absoluteY="38dp" />
+
+                <EditText
+                    android:id="@+id/etEndDate2"
+                    android:layout_width="552dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.8"
+                    android:editable="false"
+                    android:gravity="center"
+                    android:hint="@string/inputEndDate"
+                    android:importantForAutofill="no"
+                    android:paddingStart="10dp"
+                    android:textColorHint="#8D6E63"
+                    tools:ignore="RtlSymmetry,TouchTargetSizeCheck,VisualLintTextFieldSize" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:text="Class List:"
+                android:textColor="#121010"
+                android:textSize="20sp" />
+
+            <ListView
+                android:id="@+id/lsClass"
+                android:layout_width="match_parent"
+                android:layout_height="228dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="40dp"
+                tools:ignore="NestedScrolling" />
+
+            <Button
+                android:id="@+id/bt_add_class"
+                android:layout_width="182dp"
+                android:layout_height="52dp"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/custom_button"
+                android:gravity="center"
+                android:text="@string/bt_add_class"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/bt_delete_class"
+                android:layout_width="182dp"
+                android:layout_height="52dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/custom_button"
+                android:gravity="center"
+                android:text="@string/bt_delete_term"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/bt_update_class"
+                android:layout_width="182dp"
+                android:layout_height="52dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="70dp"
+                android:background="@drawable/custom_button"
+                android:gravity="center"
+                android:text="@string/bt_update_term"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
